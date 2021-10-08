@@ -41,13 +41,30 @@ public class Fly {
         speed = newSpeed;
     }
 
-/*
     //toString method
-    public String toString(){
-        if (mass == 0){
-            return "I’m dead, but I used to be a fly with a speed of " + speed;
+    public String toString() {
+        if (mass == 0) {
+            return "I’m dead, but I used to be a fly with a speed of ";
+        } else {
+            return "I’m a speedy fly with " + speed + " speed and " + mass + " mass.";
+        }
     }
-*/
+
+    //grow method
+    public void grow(int addedMass){
+        mass = mass + addedMass;
+        if (addedMass<20 && mass<20){
+            speed = speed+1;
+        } else {
+            speed = speed - 0.5;
+        }
+    }
+
+    //is dead
+    public boolean isDead(){
+        return mass == 0;
+    }
+
 /*
     public static void main(String[] args){
     Fly ka1 = new Fly(2, 4);
