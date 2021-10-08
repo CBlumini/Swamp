@@ -1,6 +1,7 @@
 package com.SwapClien;
 
 import com.Fly.Fly;
+import com.Frog.Frog;
 
 public class SwampClient {
     public static void main(String[] args){
@@ -13,5 +14,8 @@ public class SwampClient {
 
         ka1.setSpeed(25);
         System.out.println("fly 1 speed is " + ka1.getSpeed());
+
+        Frog froggy = new Frog("Carl", 2, 3.2);
+        Frog froggy2 = new Frog("Joe", 2.0, 3.2);
     }
 }

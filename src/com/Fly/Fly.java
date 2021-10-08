@@ -8,9 +8,14 @@ public class Fly {
     public static final double defaultSpeed = 10;
 
 
-    //default constructor
-    public Fly(){
-        this(defaultMass, defaultSpeed);
+
+
+
+
+    // main constructor
+    public Fly(float initMass, double initSpeed){
+        mass = initMass;
+        speed = initSpeed;
     }
 
     //half default constructor
@@ -18,10 +23,9 @@ public class Fly {
         this(initMass, defaultSpeed);
     }
 
-    // main constructor
-    public Fly(float initMass, double initSpeed){
-        mass = initMass;
-        speed = initSpeed;
+    //default constructor
+    public Fly(){
+        this(defaultMass, defaultSpeed);
     }
 
     //**********methods*******
