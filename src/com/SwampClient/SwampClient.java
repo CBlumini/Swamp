@@ -12,6 +12,10 @@ public class SwampClient {
         System.out.println("fly 2 mass is " + ka2.getMass());
         System.out.println("fly 2 mass is " + ka3.getMass());
 
+        System.out.println(ka1.toString());
+
+
+
         ka1.setSpeed(25);
         System.out.println("fly 1 speed is " + ka1.getSpeed());
 

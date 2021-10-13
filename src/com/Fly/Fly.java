@@ -2,9 +2,9 @@ package com.Fly;
 
 public class Fly {
     //instance variables
-    private float mass;
+    private double mass;
     private double speed;
-    public static final float DEFAULT_MASS = 5;
+    public static final double DEFAULT_MASS = 5;
     public static final double DEFAULT_SPEED = 10;
 
 
@@ -13,13 +13,13 @@ public class Fly {
 
 
     // main constructor
-    public Fly(float initMass, double initSpeed){
+    public Fly(double initMass, double initSpeed){
         mass = initMass;
         speed = initSpeed;
     }
 
     //half default constructor
-    public Fly(float initMass){
+    public Fly(double initMass){
         this(initMass, DEFAULT_SPEED);
     }
 
@@ -33,12 +33,12 @@ public class Fly {
     public double getSpeed(){
         return speed;
     }
-    public float getMass(){
+    public double getMass(){
         return mass;
     }
 
     //setters
-    public void setMass(float newMass) {
+    public void setMass(double newMass) {
         mass = newMass;
     }
     public void setSpeed(double newSpeed) {
@@ -48,19 +48,21 @@ public class Fly {
     //toString method
     public String toString() {
         if (mass == 0) {
-            return "I’m dead, but I used to be a fly with a speed of ";
+            return "I’m dead, but I used to be a fly with a speed of "+ speed;
         } else {
             return "I’m a speedy fly with " + speed + " speed and " + mass + " mass.";
         }
     }
 
     //grow method
-    public void grow(int addedMass){
-        mass = mass + addedMass;
-        if (addedMass<20 && mass<20){
-            speed = speed+1;
-        } else {
-            speed = speed - 0.5;
+    public void grow(int addedMass) {
+        for (int i = 0; i < addedMass; i++) {
+            if (mass < 20) {
+                speed++;
+            } else {
+                speed = speed - 0.5;
+            }
+            mass++;
         }
     }
 
@@ -88,3 +90,12 @@ public class Fly {
 //errors I had along the way
 //https://stackoverflow.com/questions/10963775/cannot-reference-x-before-supertype-constructor-has-been-called-where-x-is-a
 //https://stackoverflow.com/questions/10080862/java-class-expected
+
+/*
+        mass = mass + addedMass;
+        if (addedMass<20 && mass<20){
+            speed = speed+1;
+        } else {
+            speed = speed - 0.5;
+        }
+ */

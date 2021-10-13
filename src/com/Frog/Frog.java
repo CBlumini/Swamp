@@ -46,6 +46,7 @@ public class Frog {
     }
 
     //toString
+    //need to format these
     public String toString(){
         if (isFroglet){
             return "My name is " + name + " and I’m a rare froglet! I’m " + age + " months old and my tongue has a speed of " + tongueSpeed + ".";
@@ -56,7 +57,7 @@ public class Frog {
 
     //Grow Method
     public void grow(int addMonths){
-        for (int i = 0; i <= addMonths; i++) {
+        for (int i = 0; i < addMonths; i++) {
            if (age<=12){
                age++;
                tongueSpeed++;
