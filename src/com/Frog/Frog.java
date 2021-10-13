@@ -8,8 +8,8 @@ public class Frog {
     private boolean isFroglet;
     private static String species;
     //finals should be all caps
-    public static final int defaultAge=5;
-    public static final double defaultTongueSpeed = 5;
+    public static final int DEFAULT_AGE =5;
+    public static final double DEFAULT_TONGUE_SPEED = 5;
 
     //main constructor
     public Frog(String name, int age, double tongueSpeed){
@@ -27,7 +27,7 @@ public class Frog {
     }
     //default constructor
     public Frog(String initName){
-        this(initName, defaultAge, defaultTongueSpeed);
+        this(initName, DEFAULT_AGE, DEFAULT_TONGUE_SPEED);
         //this.name = name;
     }
 

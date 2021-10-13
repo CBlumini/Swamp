@@ -19,6 +19,6 @@ public class SwampClient {
         Frog froggy2 = new Frog("Shake", 2.0, 3.2);
         Frog froggy3 = new Frog("Frylock");
 
-        System.out.println(froggy3.defaultAge);
+        System.out.println(froggy3.DEFAULT_AGE);
     }
 }

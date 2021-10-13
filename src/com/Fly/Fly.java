@@ -4,8 +4,8 @@ public class Fly {
     //instance variables
     private float mass;
     private double speed;
-    public static final float defaultMass = 5;
-    public static final double defaultSpeed = 10;
+    public static final float DEFAULT_MASS = 5;
+    public static final double DEFAULT_SPEED = 10;
 
 
 
@@ -20,12 +20,12 @@ public class Fly {
 
     //half default constructor
     public Fly(float initMass){
-        this(initMass, defaultSpeed);
+        this(initMass, DEFAULT_SPEED);
     }
 
     //default constructor
     public Fly(){
-        this(defaultMass, defaultSpeed);
+        this(DEFAULT_MASS, DEFAULT_SPEED);
     }
 
     //**********methods*******
@@ -64,7 +64,7 @@ public class Fly {
         }
     }
 
-    //is dead
+    //is dead method
     public boolean isDead(){
         return mass == 0;
     }
