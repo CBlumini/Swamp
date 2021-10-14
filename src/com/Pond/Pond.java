@@ -35,9 +35,9 @@ public class Pond {
         System.out.println(Peepaw.toString());
 
         //tests
-        Fly1.grow(19);
-        System.out.println(Fly1.toString());
-        System.out.println(Peepo.getSpecies());
+        //Fly1.grow(19);
+        //System.out.println(Fly1.toString());
+        //System.out.println(Peepo.getSpecies());
 
 
     }

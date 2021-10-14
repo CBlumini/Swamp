@@ -19,6 +19,7 @@ public class Frog {
         this.name = name;
         this.age = age;
         this.tongueSpeed=tongueSpeed;
+        isFroglet = age > 1 && age < 7;
     }
     //ageInYears constructor
     //how do I chain this?
@@ -49,9 +50,9 @@ public class Frog {
     //need to format these
     public String toString(){
         if (isFroglet){
-            return "My name is " + name + " and I’m a rare froglet! I’m " + age + " months old and my tongue has a speed of " + tongueSpeed + ".";
+            return String.format("My name is %s and I’m a rare froglet! I’m %d months old and my tongue has a speed of %.2f.", name, age, tongueSpeed);
         } else {
-            return "My name is " + name + " and I’m a rare frog. I’m " + age + " months old and my tongue has a speed of " + tongueSpeed+ ".";
+            return String.format("My name is %s and I’m a rare frog. I’m %d months old and my tongue has a speed of %.2f.", name, age, tongueSpeed);
         }
     }
 

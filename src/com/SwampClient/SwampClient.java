@@ -19,9 +19,13 @@ public class SwampClient {
         ka1.setSpeed(25);
         System.out.println("fly 1 speed is " + ka1.getSpeed());
 
-        Frog froggy = new Frog("Meatwad", 2, 3.2);
-        Frog froggy2 = new Frog("Shake", 2.0, 3.2);
+        Frog froggy = new Frog("Meatwad", 6, 3.3122);
+        Frog froggy2 = new Frog("Shake", 2.0, 3.221);
         Frog froggy3 = new Frog("Frylock");
+
+        System.out.println(froggy.toString());
+        System.out.println(froggy2.toString());
+        System.out.println(froggy3.toString());
 
         System.out.println(froggy3.DEFAULT_AGE);
     }
