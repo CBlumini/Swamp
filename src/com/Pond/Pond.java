@@ -32,7 +32,7 @@ public class Pond {
 
         Peepaw.grow(4);
         System.out.println(Peepaw.toString());
-        System.out.println(Peepaw.toString());
+        System.out.println(Pepe.toString());
 
         //tests
         //Fly1.grow(19);
